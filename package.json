@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon --exec mocha --recursive -R min "
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/ravraw/muber/issues"
   },
-  "homepage": "https://github.com/ravraw/muber#readme"
+  "homepage": "https://github.com/ravraw/muber#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.2.10"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "supertest": "^3.1.0"
+  }
 }
