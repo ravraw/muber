@@ -4,11 +4,10 @@ const Schema = mongoose.Schema;
 const DriverSchema = new Schema({
   email: {
     type: String,
-    unique: true,
     required: true
   },
   driving: {
-    type: boolean,
+    type: Boolean,
     default: false
   }
 });
